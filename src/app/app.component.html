@@ -1,0 +1,12 @@
+<app-navbar [sidenav]="sidenav"></app-navbar>
+<div class="app-component-sidenav">
+    <mat-sidenav-container class="docs-component-viewer-sidenav-container">
+        <mat-sidenav #sidenav mode="over" (click)="sidenav.close()" class="docs-component-viewer-sidenav">
+            <app-sidenav-header></app-sidenav-header>
+            <app-sidenav-list></app-sidenav-list>
+        </mat-sidenav>
+        <div class="docs-component-sidenav-content">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-container>
+</div>

@@ -1,0 +1,16 @@
+<mat-list>
+    <!-- <a routerLink="['/one', post.id]"> -->
+    <a routerLink="/one">
+        <mat-card *ngFor="let post of (posts$|async)">
+            <mat-list-item>
+                <avatar size="52" matListAvatar [name]="post.title.split(' ', 2).join(' ')" [displayType]="'circle'"></avatar>
+                <h3 matLine> #{{ post.id + " - " + post.title }} </h3>
+                <p matLine> {{post.body}} </p>
+                <p matLine fxLayoutAlign="start end" class="custom-line-3">
+                    <mat-icon class="custom-icon">access_time</mat-icon> <span class="margin-right-1"> {{ fecha }}</span>
+                    <mat-icon class="custom-icon">person</mat-icon><span class="margin-right-1"> Fran </span>
+                </p>
+            </mat-list-item>
+        </mat-card>
+    </a>
+</mat-list>

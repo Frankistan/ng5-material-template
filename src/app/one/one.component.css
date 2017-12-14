@@ -1,0 +1,33 @@
+mat-list {
+    padding: 0.5rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+mat-card {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    padding: 0.5rem;
+}
+
+avatar.mat-list-avatar {
+    height: 3.25rem !important;
+    width: 3.25rem !important;
+}
+
+mat-icon.custom-icon {
+    margin-right: 0.5rem;
+    color: grey;
+    font-size: 1rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+span.margin-right-1 {
+    margin-right: 0.5rem;
+}
+
+.mat-line {
+    margin-top: 0.25rem !important;
+}
