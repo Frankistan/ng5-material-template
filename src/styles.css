@@ -4,7 +4,7 @@ body {
     margin: 0
 }
 
-.docs-app-background {
+.app-background {
     background: #fafafa
 }
 
@@ -31,16 +31,10 @@ app-navbar {
     z-index: 2
 }
 
-app-root>.app-component-sidenav {
+app-root>.app-sidenav {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1
-}
-
-app-root>app-guides,
-app-root>app-homepage,
-app-root>guide-viewer {
-    overflow-y: auto
 }
 
 @media (max-width: 600px) {
@@ -57,7 +51,7 @@ app-root>guide-viewer {
     }
 }
 
-.app-component-sidenav {
+.app-sidenav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -67,13 +61,13 @@ app-root>guide-viewer {
     flex-direction: column
 }
 
-.docs-component-viewer-sidenav-container {
+.sidenav-container {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1
 }
 
-.docs-component-viewer-sidenav {
+.sidenav-panel {
     padding-bottom: 72px;
     width: 240px;
     bottom: 0;
@@ -81,12 +75,12 @@ app-root>guide-viewer {
     height: 100%
 }
 
-.docs-component-viewer-sidenav,
-.docs-component-viewer-sidenav.mat-sidenav-opened {
+.sidenav-panel,
+.sidenav-panel.mat-sidenav-opened {
     box-shadow: 3px 0 6px rgba(0, 0, 0, .24)
 }
 
-.docs-component-viewer-sidenav h3 {
+.sidenav-panel h3 {
     border: none;
     font-size: 10px;
     letter-spacing: 1px;
@@ -97,24 +91,24 @@ app-root>guide-viewer {
     padding: 0 16px
 }
 
-.docs-component-viewer-sidenav ul {
+.sidenav-panel ul {
     list-style-type: none;
     margin: 0;
     padding: 0
 }
 
-.docs-component-viewer-sidenav li {
+.sidenav-panel li {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     margin: 0;
     padding: 0
 }
 
-.docs-component-viewer-sidenav li:last-child {
+.sidenav-panel li:last-child {
     border-color: transparent
 }
 
-.docs-component-viewer-sidenav li>a {
+.sidenav-panel li>a {
     box-sizing: border-box;
     display: block;
     font-size: 14px;
@@ -126,11 +120,11 @@ app-root>guide-viewer {
     position: relative
 }
 
-.docs-component-viewer-sidenav li>a.docs-component-viewer-sidenav-item-selected {
+.sidenav-panel li>a.sidenav-panel-item-selected {
     font-weight: 600
 }
 
-.docs-component-sidenav-content {
+.sidenav-content {
     min-height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -141,7 +135,7 @@ app-root>guide-viewer {
     flex-direction: column
 }
 
-.docs-component-sidenav-content router-outlet+* {
+.sidenav-content router-outlet+* {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1
